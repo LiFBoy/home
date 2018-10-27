@@ -13,62 +13,387 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <style type="text/css">
-        body {
-            padding-top: 5rem;
-        }
+    <!--<link rel="stylesheet" href="./common.css">-->
 
-        .starter-template {
-            padding: 3rem 1.5rem;
-            text-align: center;
-        }
-    </style>
+    <style type="text/css">
+        /* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+/*.carousel {*/
+  /*margin-bottom: 4rem;*/
+/*}*/
+/*!* Since positioning the image, we need to help out the caption *!*/
+/*.carousel-caption {*/
+  /*bottom: 3rem;*/
+  /*z-index: 10;*/
+/*}*/
+
+/*!* Declare heights because of positioning of img element *!*/
+/*.carousel-item {*/
+  /*height: 32rem;*/
+  /*background-color: #777;*/
+/*}*/
+/*.carousel-item > img {*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  /*min-width: 100%;*/
+  /*height: 32rem;*/
+/*}*/
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+/*.marketing .col-lg-4 {*/
+  /*margin-bottom: 1.5rem;*/
+  /*text-align: center;*/
+/*}*/
+/*.marketing h2 {*/
+  /*font-weight: 400;*/
+/*}*/
+/*.marketing .col-lg-4 p {*/
+  /*margin-right: .75rem;*/
+  /*margin-left: .75rem;*/
+/*}*/
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+/*@media (min-width: 40em) {*/
+  /*!* Bump up size of carousel content *!*/
+  /*.carousel-caption p {*/
+    /*margin-bottom: 1.25rem;*/
+    /*font-size: 1.25rem;*/
+    /*line-height: 1.4;*/
+  /*}*/
+
+  /*.featurette-heading {*/
+    /*font-size: 50px;*/
+  /*}*/
+/*}*/
+
+/*@media (min-width: 62em) {*/
+  /*.featurette-heading {*/
+    /*margin-top: 7rem;*/
+  /*}*/
+/*}*/
+
+        </style>
+
 </head>
 
-    
+
 <body>
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<div class="fixed2">
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+
+    <header class="container">
+
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="#">
+               <div class="logo"></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <span>首页</span><br>
+                            <span>Index</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span>管理工作</span><br>
+                            <span>Manager work</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span>客户案例</span><br>
+                            <span>Client case</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        </nav>
+    </header>
+</div>
+
+
+  <main role="main">
+
+      <div class="bg"></div>
+      <div class="box">
+          <div class="mx-auto text-center">
+              <div class="box-name">服务模式</div>
+              <div class="box-line"></div>
+              <div class="box-tip">安防、智能化及iot技术服务就找亿修哥</div>
+              <div class="box-desc">Security and IOT product services will be found at yxiuge tecnology company.</div>
+          </div>
       </div>
-    </nav>
 
-    <main role="main" class="container">
 
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+
+      <!--<div class="mx-auto text-center">-->
+          <!--<div>服务模式</div>-->
+          <!--<div>安防、智能化及iot技术服务就找亿修哥</div>-->
+          <!--<div>Security and IOT product services will be found at yxiuge tecnology company.</div>-->
+      <!--</div>-->
+
+      <div class="container" style="margin-top: 97px; margin-bottom: 104px">
+          <div class="row margin-0">
+              <div class="col-4">
+                  <div class="c5">
+                      <div class="mx-auto text-center">
+                          <div class="c5-name"><img src="web_slices/phone.png" alt=""></div>
+                          <div class="c5-tip">智慧用工</div>
+                          <div class="c5-desc">
+                              数据分析智能匹配、海量选择 工作生活找工作、计工时、发工资、职业技能培训、带徒授课
+                          </div>
+                          <div class="c5-btn">测试</div>
+                      </div>
+
+                  </div>
+              </div><div class="col-4">
+                  <div class="c5">
+                      <div class="mx-auto text-center">
+                          <div class="c5-name"><img src="web_slices/phone.png" alt=""></div>
+                          <div class="c5-tip">智慧用工</div>
+                          <div class="c5-desc">
+                              数据分析智能匹配、海量选择 工作生活找工作、计工时、发工资、职业技能培训、带徒授课
+                          </div>
+                          <div class="c5-btn">测试</div>
+                      </div>
+
+                  </div>
+              </div><div class="col-4">
+                  <div class="c5">
+                      <div class="mx-auto text-center">
+                          <div class="c5-name"><img src="web_slices/phone.png" alt=""></div>
+                          <div class="c5-tip">智慧用工</div>
+                          <div class="c5-desc">
+                              数据分析智能匹配、海量选择 工作生活找工作、计工时、发工资、职业技能培训、带徒授课
+                          </div>
+                          <div class="c5-btn">测试</div>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
       </div>
 
-    </main><!-- /.container -->
+      <div style="width: 100%; background: #102238">
+          <div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel">
+              <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                  <div class="carousel-item active carousel-bg">
+                      <div class="mx-auto text-center">
+                          <div class="cl-name">以匠心筑服务 为智慧中国助力</div>
+                          <div class="cl-tip">Security and IOT product services will be found at yxiuge tecnology company.</div>
+                      </div>
+                  </div>
+                  <div class="carousel-item carousel-bg">
+                      <div class="mx-auto text-center">
+                          <div class="cl-name">以匠心筑服务 为智慧中国助力</div>
+                          <div class="cl-tip">Security and IOT product services will be found at yxiuge tecnology company.</div>
+                      </div>
+
+                  </div>
+                  <div class="carousel-item carousel-bg">
+                      <div class="mx-auto text-center">
+                          <div class="cl-name">以匠心筑服务 为智慧中国助力</div>
+                          <div class="cl-tip">Security and IOT product services will be found at yxiuge tecnology company.</div>
+                      </div>
+                  </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      </div>
+
+
+      <div class="box">
+          <div class="mx-auto text-center">
+              <div class="box-name">服务模式</div>
+              <div class="box-line"></div>
+              <div class="box-tip">安防、智能化及iot技术服务就找亿修哥</div>
+              <div class="box-desc">Security and IOT product services will be found at yxiuge tecnology company.</div>
+          </div>
+      </div>
+
+
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container">
+
+      <!-- Three columns of text below the carousel -->
+      <!--<div class="row margin-0 mr-t">-->
+        <!--<div class="col-4">-->
+            <!--<div class="c4">-->
+                <!--<div class="c4-radius"></div>-->
+                <!--<div class="mx-auto text-center">-->
+                    <!--<div class="c4-name">行业积累资源雄厚</div>-->
+                    <!--<div class="c4-tip">Industry accumulates abundant resources</div>-->
+                <!--</div>-->
+                <!--<div class="c4-desc">20多年安防领域集成服务经验，平台共储备10,000+工程师、1000门培训课程，10000+技能知识文库-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div><div class="col-4">-->
+            <!--<div class="c4">-->
+                <!--<div class="c4-radius"></div>-->
+                <!--<div class="mx-auto text-center">-->
+                    <!--<div class="c4-name">行业积累资源雄厚</div>-->
+                    <!--<div class="c4-tip">Industry accumulates abundant resources</div>-->
+                <!--</div>-->
+                <!--<div class="c4-desc">20多年安防领域集成服务经验，平台共储备10,000+工程师、1000门培训课程，10000+技能知识文库-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div><div class="col-4">-->
+            <!--<div class="c4">-->
+                <!--<div class="c4-radius"></div>-->
+                <!--<div class="mx-auto text-center">-->
+                    <!--<div class="c4-name">行业积累资源雄厚</div>-->
+                    <!--<div class="c4-tip">Industry accumulates abundant resources</div>-->
+                <!--</div>-->
+                <!--<div class="c4-desc">20多年安防领域集成服务经验，平台共储备10,000+工程师、1000门培训课程，10000+技能知识文库-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+
+
+
+      <div class="row margin-0 mr-t">
+        <div class="col-4 col-sm-2 flex">
+            <div class="line">
+                <div class="line-number">01</div>
+                <div class="line-line"></div>
+                <div class="line-circle"></div>
+            </div>
+            <div class="step"></div>
+        </div><div class="col-4 col-sm-2 flex">
+            <div class="line">
+                <div class="line-number">01</div>
+                <div class="line-line"></div>
+                <div class="line-circle"></div>
+            </div>
+            <div class="step"></div>
+        </div><div class="col-4 col-sm-2 flex">
+            <div class="line">
+                <div class="line-number">01</div>
+                <div class="line-line"></div>
+                <div class="line-circle"></div>
+            </div>
+            <div class="step"></div>
+        </div><div class="col-4 col-sm-2 flex">
+            <div class="line">
+                <div class="line-number">01</div>
+                <div class="line-line"></div>
+                <div class="line-circle"></div>
+            </div>
+            <div class="step"></div>
+        </div><div class="col-4 col-sm-2 flex">
+            <div class="line">
+                <div class="line-number">01</div>
+                <div class="line-line"></div>
+                <div class="line-circle"></div>
+            </div>
+            <div class="step"></div>
+        </div><div class="col-4 col-sm-2 flex">
+            <div class="line">
+                <div class="line-number">01</div>
+                <div class="line-line"></div>
+                <div class="line-circle"></div>
+            </div>
+            <div class="step"></div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+      <!-- START THE FEATURETTES -->
+
+
+      <!-- /END THE FEATURETTES -->
+
+    <!-- /.container -->
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+        <div class="dividing-line"></div>
+
+        <div style="overflow: hidden">
+            <div class="float-left pr-18">
+                <span class="tip"></span>
+                <span class="tip-title">友情链接</span>
+            </div>
+            <div class="float-left">
+                <span class="tip-item pr-24">亿修服务商系统</span>
+                <span class="tip-item pr-24">亿修客户系统</span>
+                <span class="tip-item pr-24">亿修工程师系统</span>
+            </div>
+        </div>
+        <div style="overflow: hidden">
+            <div class="float-left pr-18">
+                <span class="tip"></span>
+                <span class="tip-title">联系我们</span>
+            </div>
+            <div class="float-left">
+                <div>
+                    <span><img src="web_slices/phone.png" alt=""></span>
+                    <span class="tip-item">0571-28284116</span>
+                </div>
+                <div>
+                    <span><img src="web_slices/phone.png" alt=""></span>
+                    <span class="tip-item">yxg@yxiuge.com</span>
+                </div>
+                <div>
+                    <span><img src="web_slices/phone.png" alt=""></span>
+                    <span class="tip-item">浙江省杭州市西湖区数源软件园17幢302室</span>
+                </div>
+            </div>
+        </div>
+      <!--<p class="float-right"><a href="#">Back to top</a></p>-->
+        <!---->
+      <!--<p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>-->
+    </footer>
+  </main>
 
 
     <!-- Bootstrap core JavaScript
