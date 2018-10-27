@@ -2,7 +2,7 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: './template/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -26,7 +26,24 @@ module.exports = {
             // }
           ],
         }),
-      }, {
+      },
+      {
+
+        test: /(\.scss)$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            {
+              loader: 'css-loader',
+            },
+            {
+              loader: 'sass-loader'
+            }
+          ],
+        }),
+
+      },
+      {
         test: /\.(png|jpg|gif|svg)$/,
         use: [{
           loader: 'url-loader',
@@ -43,14 +60,14 @@ module.exports = {
             }
           }
         ]
-      },  {
+      }, {
         test: /\.(css)$/,
         use: [{
           loader: 'webpack-px-to-rem',
           //这个配置是可选的
           query: {
             // 1rem=npx 默认为 10
-            basePx: 20,
+            basePx: 16,
             //只会转换大于min的px 默认为0
             //因为很小的px（比如border的1px）转换为rem后在很小的设备上结果会小于1px，有的设备就会不显示
             min: 1,
@@ -80,5 +97,12 @@ module.exports = {
     // new webpack.DefinePlugin({
     //   'process.env.NODE_ENV': JSON.stringify('production'),
     // }),
-  ]
+  ],
+  devServer: {
+    inline: true,
+    hot: true,
+    port: 3003,
+    host: '0.0.0.0',
+
+  }
 }
