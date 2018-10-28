@@ -38,7 +38,16 @@ module.exports = {
             },
             {
               loader: 'sass-loader'
-            }
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                sourceMap: true,
+                config: {
+                  path: 'postcss.config.js'  // 这个得在项目根目录创建此文件
+                }
+              }
+            },
           ],
         }),
 
@@ -61,7 +70,7 @@ module.exports = {
           }
         ]
       }, {
-        test: /\.(css)$/,
+        test: /\.(css|scss)$/,
         use: [{
           loader: 'webpack-px-to-rem',
           //这个配置是可选的
